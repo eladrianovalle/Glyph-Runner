@@ -71,12 +71,12 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000010649239926}
-  - 114: {fileID: 114000011871512400}
   - 82: {fileID: 82000011273372474}
   - 61: {fileID: 61000011531202458}
   - 50: {fileID: 50000012352971512}
   - 95: {fileID: 95000012877243406}
-  - 114: {fileID: 114000012359385578}
+  - 114: {fileID: 114000013618981454}
+  - 114: {fileID: 114000011227273516}
   m_Layer: 0
   m_Name: playerWPhys
   m_TagString: Player
@@ -161,7 +161,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000011916021376}
   m_Layer: 0
-  m_Name: playerColliders
+  m_Name: playerForms
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -320,7 +320,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -570,7 +570,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sRenderer: {fileID: 212000012114794170}
---- !u!114 &114000011871512400
+--- !u!114 &114000011227273516
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -578,38 +578,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000010795005526}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a22d565bb40fe4970b2362556b03c5a3, type: 3}
+  m_Script: {fileID: 11500000, guid: 5c5d3ff74c8c043a492f367f67a87bf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerObjStates:
-  - {fileID: 1000010582358120}
-  - {fileID: 1000011242820182}
-  - {fileID: 1000011434045326}
-  playerStates:
-  - {fileID: 50000010336107794}
-  - {fileID: 50000013179844556}
-  - {fileID: 50000014127548204}
-  charSize: 1
-  sfxVolume: 0.2
-  grow: {fileID: 8300000, guid: bbe000f56117c47deaacb58161f9896f, type: 3}
-  shrink: {fileID: 8300000, guid: d7b99c82df0f2454fac8d43cdaab9ba5, type: 3}
---- !u!114 &114000012359385578
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010795005526}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05e6bef1638164facb7e3944d8776603, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anims: []
-  catJumps:
-  - {fileID: 8300000, guid: 081a8da725cd6432bb012ea9f63c02d5, type: 3}
-  - {fileID: 8300000, guid: 934def42ab5a3490b8eda55e94c879b1, type: 3}
-  - {fileID: 8300000, guid: e0a5f446b0c7d4a15999d2f08a58688f, type: 3}
-  sfxVolume: 0.7
+  player: {fileID: 114000013618981454}
 --- !u!114 &114000013159325120
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -622,6 +594,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sRenderer: {fileID: 212000010645190532}
+--- !u!114 &114000013618981454
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010795005526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 742f0b6d44f4d48c592e57efe2efd831, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sRenderer: {fileID: 0}
+  _collider: {fileID: 0}
+  _rBody: {fileID: 0}
+  currentState: 0
+  charSize: 1
+  sfxVolume: 0.7
+  grow: {fileID: 8300000, guid: bbe000f56117c47deaacb58161f9896f, type: 3}
+  shrink: {fileID: 8300000, guid: d7b99c82df0f2454fac8d43cdaab9ba5, type: 3}
+  playerObjStates:
+  - {fileID: 1000010582358120}
+  - {fileID: 1000011242820182}
+  - {fileID: 1000011434045326}
 --- !u!114 &114000014077620184
 MonoBehaviour:
   m_ObjectHideFlags: 1

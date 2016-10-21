@@ -555,12 +555,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 1000010795005526, guid: 981c99aaa4771423383ba49e0cd6327f, type: 2}
-      propertyPath: m_IsActive
+    - target: {fileID: 50000012352971512, guid: 981c99aaa4771423383ba49e0cd6327f,
+        type: 2}
+      propertyPath: m_GravityScale
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114000012359385578, guid: 981c99aaa4771423383ba49e0cd6327f, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 981c99aaa4771423383ba49e0cd6327f, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &999773242

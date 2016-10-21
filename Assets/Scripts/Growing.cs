@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class Growing : MonoBehaviour {
 	
-//	public GameObject[] playerStates;
+	public GameObject[] playerObjStates;
 //	public Collider2D[] playerStates;
 	public Rigidbody2D[] playerStates;
 
@@ -47,50 +47,54 @@ public class Growing : MonoBehaviour {
 
 		if (charSize == 1) {
 
-//			playerStates[0].SetActive(true);
-//			playerStates[1].SetActive(false);
-//			playerStates[2].SetActive(false);
+			playerObjStates[1].SetActive(false);
+			playerObjStates[2].SetActive(false);
+
+			playerObjStates[0].SetActive(true);
+
 
 //			playerStates[0].enabled = true;
 //			playerStates[1].enabled = false;
 //			playerStates[2].enabled = false;
 
-			playerStates[0].isKinematic = false;
-			playerStates[1].isKinematic = true;
-			playerStates[2].isKinematic = true;
+//			playerStates[0].isKinematic = false;
+//			playerStates[1].isKinematic = true;
+//			playerStates[2].isKinematic = true;
 
 		}
 
 		if (charSize == 2) {
 
-//			playerStates[0].SetActive(false);
-//			playerStates[1].SetActive(true);
-//			playerStates[2].SetActive(false);
+			playerObjStates[0].SetActive(false);
+			playerObjStates[2].SetActive(false);
+
+			playerObjStates[1].SetActive(true);
 
 //			playerStates[0].enabled = false;
 //			playerStates[1].enabled = true;
 //			playerStates[2].enabled = false;
 
-			playerStates[0].isKinematic = true;
-			playerStates[1].isKinematic = false;
-			playerStates[2].isKinematic = true;
+//			playerStates[0].isKinematic = true;
+//			playerStates[1].isKinematic = false;
+//			playerStates[2].isKinematic = true;
 
 		}
 
 		if (charSize == 3) {
 
-//			playerStates[0].SetActive(false);
-//			playerStates[1].SetActive(false);
-//			playerStates[2].SetActive(true);
+			playerObjStates[0].SetActive(false);
+			playerObjStates[1].SetActive(false);
+
+			playerObjStates[2].SetActive(true);
 
 //			playerStates[0].enabled = false;
 //			playerStates[1].enabled = false;
 //			playerStates[2].enabled = true;
 
-			playerStates[0].isKinematic = true;
-			playerStates[1].isKinematic = false;
-			playerStates[2].isKinematic = false;
-//
+//			playerStates[0].isKinematic = true;
+//			playerStates[1].isKinematic = false;
+//			playerStates[2].isKinematic = false;
+////
 		}
 	}
 

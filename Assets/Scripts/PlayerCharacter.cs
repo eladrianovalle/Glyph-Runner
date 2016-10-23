@@ -4,7 +4,7 @@ using System.Collections;
 public class PlayerCharacter : MonoBehaviour {
 
 	// player component variables
-	public SpriteRenderer _sRenderer;
+//	public SpriteRenderer _sRenderer;
 	public BoxCollider2D _collider;
 	public Rigidbody2D _rBody;
 
@@ -21,11 +21,14 @@ public class PlayerCharacter : MonoBehaviour {
 	// player gameobject variables
 	public GameObject[] playerObjStates;
 
+	// player stat variables
+	public float jumpForce;
+
 
 	void Start () {
 
 		// get components
-		_sRenderer = this.GetComponent<SpriteRenderer> ();
+//		_sRenderer = this.GetComponent<SpriteRenderer> ();
 		_collider = this.GetComponent<BoxCollider2D> ();
 		_rBody = this.GetComponent<Rigidbody2D> ();
 
@@ -38,9 +41,12 @@ public class PlayerCharacter : MonoBehaviour {
 
 	public void SizeChange () {
 
+		// set mass
+		_rBody.mass = charSize;
+
 		if (charSize == 1) {
 
-			currentState = PlayerCharacter.PlayerState.Cat;
+			currentState = PlayerState.Cat;
 
 			playerObjStates[1].SetActive(false);
 			playerObjStates[2].SetActive(false);
@@ -51,7 +57,7 @@ public class PlayerCharacter : MonoBehaviour {
 
 		if (charSize == 2) {
 
-			currentState = PlayerCharacter.PlayerState.Man;
+			currentState = PlayerState.Man;
 
 			playerObjStates[0].SetActive(false);
 			playerObjStates[2].SetActive(false);
@@ -62,7 +68,7 @@ public class PlayerCharacter : MonoBehaviour {
 
 		if (charSize == 3) {
 
-			currentState = PlayerCharacter.PlayerState.God;
+			currentState = PlayerState.God;
 
 			playerObjStates[0].SetActive(false);
 			playerObjStates[1].SetActive(false);
@@ -70,6 +76,18 @@ public class PlayerCharacter : MonoBehaviour {
 			playerObjStates[2].SetActive(true);
 
 		}
+	}
+
+	public void Jump() {
+
+//		print ("I should be jumping now!!!");
+
+		Vector3 jumpVector = this.transform.up.normalized * (charSize * jumpForce);
+		_rBody.AddForce(jumpVector);
+
+		print (jumpVector);
+
+
 	}
 
 

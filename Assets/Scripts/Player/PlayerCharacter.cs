@@ -7,6 +7,9 @@ public class PlayerCharacter : MonoBehaviour {
 //	public SpriteRenderer _sRenderer;
 	public BoxCollider2D _collider;
 	public Rigidbody2D _rBody;
+//	public Animator _anim;
+	public Animator[] _anims;
+
 
 	// player state variables
 	public enum PlayerState { Cat, Man, God };
@@ -31,6 +34,7 @@ public class PlayerCharacter : MonoBehaviour {
 //		_sRenderer = this.GetComponent<SpriteRenderer> ();
 		_collider = this.GetComponent<BoxCollider2D> ();
 		_rBody = this.GetComponent<Rigidbody2D> ();
+//		_anim = this.GetComponent<Animator> ();
 
 
 		// set character size and state
@@ -85,6 +89,16 @@ public class PlayerCharacter : MonoBehaviour {
 		Vector3 jumpVector = this.transform.up.normalized * (charSize * jumpForce);
 		_rBody.AddForce(jumpVector);
 
+		if (currentState == PlayerState.Cat) {
+			_anims [0].Play ("Jump");
+		}
+		if (currentState == PlayerState.Man) {
+			_anims [1].Play ("Jump");
+		}
+		if (currentState == PlayerState.God) {
+			_anims [2].Play ("Jump");
+		}
+			
 		print (jumpVector);
 
 

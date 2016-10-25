@@ -317,10 +317,10 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010795005526}
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 3
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 3
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -531,7 +531,7 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010795005526}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 25cce81709aea42ed9888d48812594de, type: 2}
   m_CullingMode: 0
@@ -607,6 +607,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _collider: {fileID: 0}
   _rBody: {fileID: 0}
+  _anim: {fileID: 0}
+  _anims:
+  - {fileID: 95000012141070768}
+  - {fileID: 95000014077258660}
+  - {fileID: 95000011293329408}
   currentState: 0
   charSize: 1
   sfxVolume: 0.7
@@ -616,7 +621,7 @@ MonoBehaviour:
   - {fileID: 1000010582358120}
   - {fileID: 1000011242820182}
   - {fileID: 1000011434045326}
-  jumpForce: 100
+  jumpForce: 240
 --- !u!114 &114000014077620184
 MonoBehaviour:
   m_ObjectHideFlags: 1

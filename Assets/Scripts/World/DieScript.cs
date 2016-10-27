@@ -5,21 +5,21 @@ public class DieScript : MonoBehaviour {
 
 	public bool isDead;
 	public AudioClip die;
-	public AudioSource audio;
+	public AudioSource audioSrc;
 //	public float delay;
 
 
 	void Start () {
 		isDead = false;
 //		delay = 5f;
-		audio = this.GetComponent<AudioSource>();
+		audioSrc = this.GetComponent<AudioSource>();
 	}
 
 	void Update () {
 
 		if (isDead) {
-			audio.PlayOneShot(die);
-			if (!audio.isPlaying) {
+			audioSrc.PlayOneShot(die);
+			if (!audioSrc.isPlaying) {
 				Die();
 //				StartCoroutine(Die());
 			}
@@ -59,6 +59,6 @@ public class DieScript : MonoBehaviour {
 //	}
 
 	void Die() {
-		Application.LoadLevel(Application.loadedLevel + 1);
+		UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 1);
 	}
 }

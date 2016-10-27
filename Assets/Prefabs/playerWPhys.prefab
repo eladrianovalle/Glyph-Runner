@@ -531,7 +531,7 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010795005526}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 25cce81709aea42ed9888d48812594de, type: 2}
   m_CullingMode: 0
@@ -569,7 +569,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9fcb70919ea44ef9b30958e17db35d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sRenderer: {fileID: 212000012114794170}
+  _sRenderer: {fileID: 0}
 --- !u!114 &114000011227273516
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -593,7 +593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9fcb70919ea44ef9b30958e17db35d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sRenderer: {fileID: 212000010645190532}
+  _sRenderer: {fileID: 348191526}
 --- !u!114 &114000013618981454
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -607,7 +607,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _collider: {fileID: 0}
   _rBody: {fileID: 0}
-  _anim: {fileID: 0}
   _anims:
   - {fileID: 95000012141070768}
   - {fileID: 95000014077258660}
@@ -633,7 +632,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9fcb70919ea44ef9b30958e17db35d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sRenderer: {fileID: 212000012483976948}
+  _sRenderer: {fileID: 0}
 --- !u!212 &212000010645190532
 SpriteRenderer:
   m_ObjectHideFlags: 1

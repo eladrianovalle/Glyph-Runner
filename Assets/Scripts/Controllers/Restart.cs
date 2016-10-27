@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Restart : MonoBehaviour {
 
-	// Update is called once per frame
 	void Update () {
 		if (Input.GetKey(KeyCode.UpArrow) | Input.GetKey(KeyCode.DownArrow)) {
 			RestartLevel();
@@ -11,10 +11,14 @@ public class Restart : MonoBehaviour {
 	}
 	
 	public void RestartLevel () {
-		if (Application.loadedLevel == 3) {
-			Application.LoadLevel(0);
+		if (SceneManager.GetActiveScene().buildIndex == 3) {
+
+			SceneManager.LoadScene (0);
+
 		} else {
-			Application.LoadLevel (Application.loadedLevel - 1);
+
+			SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex - 1);
+
 		}
 	}
 }

@@ -20,7 +20,7 @@ public class Credits : MonoBehaviour {
 	}
 
 	void OnMouseDown() {
-		Application.LoadLevel("Credits");
+		UnityEngine.SceneManagement.SceneManager.LoadScene ("Credits");
 	}
 
 }

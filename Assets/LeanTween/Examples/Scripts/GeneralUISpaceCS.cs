@@ -18,14 +18,16 @@ public class GeneralUISpaceCS : MonoBehaviour {
 	public Sprite[] chatSprites;
 	public RectTransform chatBar1;
 	public RectTransform chatBar2;
+	public UnityEngine.UI.Text chatText;
 
 	void Start () {
-		//Time.timeScale = 1f/4f;
+		// Time.timeScale = 1f/4f;
 		
 		// *********** Main Window **********
 		// Scale the whole window in
 		mainWindow.localScale = Vector3.zero;
 		LeanTween.scale( mainWindow, new Vector3(1f,1f,1f), 0.6f).setEase(LeanTweenType.easeOutBack);
+		LeanTween.alphaCanvas( mainWindow.GetComponent<CanvasGroup>(), 0f, 1f).setDelay(2f).setLoopPingPong().setRepeat(2);
 
 		// Fade the main paragraph in while moving upwards
 		mainParagraphText.anchoredPosition3D += new Vector3(0f,-10f,0f);
@@ -39,6 +41,9 @@ public class GeneralUISpaceCS : MonoBehaviour {
 		// Fade button in
 		LeanTween.textAlpha(mainButton2, 1f, 2f ).setFrom(0f).setDelay(0f).setEase(LeanTweenType.easeOutQuad);
 		LeanTween.alpha(mainButton2, 1f, 2f ).setFrom(0f).setDelay(0f).setEase(LeanTweenType.easeOutQuad);
+
+		// Pop size of button
+		LeanTween.size(mainButton1, mainButton1.sizeDelta * 1.1f, 0.5f).setDelay(3f).setEaseInOutCirc().setRepeat(6).setLoopPingPong();
 
 
 		// *********** Pause Button **********
@@ -66,6 +71,14 @@ public class GeneralUISpaceCS : MonoBehaviour {
 		// Animate the bar up and down while changing the color to red-ish
 		LeanTween.color( chatBar2, new Color(248f/255f,67f/255f,108f/255f, 0.5f), 1.2f).setEase(LeanTweenType.easeInQuad).setLoopPingPong().setDelay(1.2f);
 		LeanTween.scale( chatBar2, new Vector2(1f,0.7f), 1.2f).setEase(LeanTweenType.easeInQuad).setLoopPingPong();
+
+		// Write in paragraph text
+		string origText = chatText.text;
+		chatText.text = "";
+		LeanTween.value(gameObject, 0, (float)origText.Length, 6f).setEase(LeanTweenType.easeOutQuad).setOnUpdate( (float val)=>{
+			chatText.text = origText.Substring( 0, Mathf.RoundToInt( val ) );
+		}).setLoopClamp().setDelay(2.0f);
+		
 	}
 
 }

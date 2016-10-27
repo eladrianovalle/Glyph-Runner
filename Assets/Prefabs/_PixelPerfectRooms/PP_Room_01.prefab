@@ -23,9 +23,9 @@ GameObject:
   - 50: {fileID: 50000013116356696}
   - 61: {fileID: 61000011412881162}
   - 61: {fileID: 61000011078627972}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: room-01
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120,7 +120,7 @@ Transform:
   m_GameObject: {fileID: 1000013124182228}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.25, y: 1.25, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 4000013186491280}
@@ -147,7 +147,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012008016256}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.4, y: -1.2, z: 0}
+  m_LocalPosition: {x: 4.3, y: -1.75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -161,7 +161,7 @@ Transform:
   m_GameObject: {fileID: 1000010800194528}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.336, y: 0.336, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000010851776350}
@@ -213,7 +213,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.4
+  m_Radius: 0.2
 --- !u!61 &61000011078627972
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -225,9 +225,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 16.71514, y: -7.5697846}
+  m_Offset: {x: 7.15, y: -3.3}
   serializedVersion: 2
-  m_Size: {x: 2.2872596, y: 5.4625125}
+  m_Size: {x: 1.2, y: 2.5}
 --- !u!61 &61000011412881162
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -239,9 +239,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -3.5605543, y: -7.5697846}
+  m_Offset: {x: -1.5, y: -3.3}
   serializedVersion: 2
-  m_Size: {x: 28.572283, y: 5.4625115}
+  m_Size: {x: 12, y: 2.5}
 --- !u!61 &61000013239286480
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -253,9 +253,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -4.0044155, y: -0.12689257}
+  m_Offset: {x: -5, y: -0.5}
   serializedVersion: 2
-  m_Size: {x: 3.9648507, y: 1.2537855}
+  m_Size: {x: 5, y: 1}
 --- !u!82 &82000013935150398
 AudioSource:
   m_ObjectHideFlags: 1

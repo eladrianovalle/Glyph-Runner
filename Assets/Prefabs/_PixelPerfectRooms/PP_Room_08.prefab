@@ -22,7 +22,7 @@ GameObject:
   - 61: {fileID: 61000013363947190}
   - 114: {fileID: 114000013186471708}
   - 82: {fileID: 82000011237265846}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: room-collider
   m_TagString: Obst
   m_Icon: {fileID: 0}
@@ -37,7 +37,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000013107406166}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - 61: {fileID: 61000012834476050}
   - 114: {fileID: 114000012438288286}
   - 82: {fileID: 82000013616999324}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: room-collider (1)
   m_TagString: Obst
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   - 58: {fileID: 58000013212946194}
   - 50: {fileID: 50000013029582942}
   - 114: {fileID: 114000012531357064}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: jump-trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   - 4: {fileID: 4000014130914356}
   - 50: {fileID: 50000010824190330}
   - 114: {fileID: 114000012395757372}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PP_Room_08
   m_TagString: Room
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   - 212: {fileID: 212000013377192324}
   - 61: {fileID: 61000011752559864}
   - 61: {fileID: 61000011680889738}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: room-08
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123,7 +123,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000013391805238}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -139,7 +139,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000014269014536}
   - 212: {fileID: 212000012028172686}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Dog-God
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -157,7 +157,7 @@ GameObject:
   - 61: {fileID: 61000010237609422}
   - 114: {fileID: 114000011733923898}
   - 82: {fileID: 82000010823337380}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: room-collider
   m_TagString: Obst
   m_Icon: {fileID: 0}

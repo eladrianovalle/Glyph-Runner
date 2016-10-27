@@ -21,7 +21,7 @@ GameObject:
   - 4: {fileID: 4000012671506142}
   - 212: {fileID: 212000013130381488}
   - 61: {fileID: 61000012134396084}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: room-10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   - 61: {fileID: 61000012645919746}
   - 114: {fileID: 114000012657472656}
   - 82: {fileID: 82000011487715002}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: room-collider
   m_TagString: Obst
   m_Icon: {fileID: 0}
@@ -56,13 +56,13 @@ GameObject:
   - 4: {fileID: 4000012662705202}
   - 50: {fileID: 50000010004335832}
   - 114: {fileID: 114000011623426636}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PP_Room_10
   m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1000013448303108
 GameObject:
   m_ObjectHideFlags: 1
@@ -71,7 +71,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000012467800128}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,7 +87,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000013056496358}
   - 212: {fileID: 212000014139440700}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Dog-God
   m_TagString: Untagged
   m_Icon: {fileID: 0}

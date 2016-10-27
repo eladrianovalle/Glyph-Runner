@@ -21,7 +21,7 @@ GameObject:
   - 4: {fileID: 4000013059104962}
   - 50: {fileID: 50000011841883138}
   - 114: {fileID: 114000011217487434}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PP_Room_06
   m_TagString: Room
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   - 212: {fileID: 212000014020901966}
   - 61: {fileID: 61000010764445648}
   - 61: {fileID: 61000010484902982}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: room-06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000013727050270}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69,7 +69,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000010128475484}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,7 +85,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000010196373356}
   - 212: {fileID: 212000013070210164}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Dog-God
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   - 58: {fileID: 58000012062770180}
   - 50: {fileID: 50000014031427122}
   - 114: {fileID: 114000010967659414}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: jump-trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121,7 +121,7 @@ GameObject:
   - 61: {fileID: 61000013972103634}
   - 114: {fileID: 114000011914945964}
   - 82: {fileID: 82000013679143452}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: room-collider
   m_TagString: Obst
   m_Icon: {fileID: 0}

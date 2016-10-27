@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000012292782404}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,7 +37,7 @@ GameObject:
   - 61: {fileID: 61000010281317202}
   - 114: {fileID: 114000010069554848}
   - 82: {fileID: 82000012414716466}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: room-collider
   m_TagString: Obst
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - 212: {fileID: 212000011395312036}
   - 61: {fileID: 61000010738814426}
   - 61: {fileID: 61000014218793922}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: room-03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   - 4: {fileID: 4000013459132044}
   - 50: {fileID: 50000011245069166}
   - 114: {fileID: 114000010544832710}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PP_Room_03
   m_TagString: Room
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   - 61: {fileID: 61000011070299806}
   - 114: {fileID: 114000010562186124}
   - 82: {fileID: 82000011477579748}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: room-collider (1)
   m_TagString: Obst
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   - 61: {fileID: 61000010416444960}
   - 114: {fileID: 114000010935912228}
   - 82: {fileID: 82000013096935004}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: room-collider (2)
   m_TagString: Obst
   m_Icon: {fileID: 0}
@@ -126,7 +126,7 @@ GameObject:
   - 61: {fileID: 61000013767110772}
   - 114: {fileID: 114000010317213346}
   - 82: {fileID: 82000010811185682}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: room-collider (3)
   m_TagString: Obst
   m_Icon: {fileID: 0}
@@ -144,7 +144,7 @@ GameObject:
   - 58: {fileID: 58000011759188880}
   - 50: {fileID: 50000012345852720}
   - 114: {fileID: 114000013701020894}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: jump-trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
